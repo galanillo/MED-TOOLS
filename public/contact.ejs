@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  </head>
+  <body>
+    <div class="container mt-5">
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+  
+          <div class="card">
+            <div class="card-header">
+              <h4 class="text-center">Formulario de ayuda</h4>
+            </div>
+  
+            <div class="card-body">
+
+              <form>
+  
+                <div class="form-group">
+                  <label for="name">Nombre</label>
+                  <input type="text" class="form-control" id="name" name="name" placeholder="Ingresa tu nombre" required="true">
+                </div>
+  
+                <div class="form-group">
+                  <label for="email">Correo electrónico</label>
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text"><i class="fas fa-envelope"></i></span>
+                    </div>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Ingresa tu correo electrónico" required="true">
+                  </div>
+                </div>
+  
+                <div class="form-group">
+                  <label for="message">Mensaje</label>
+                  <textarea class="form-control" id="message" name="message" rows="3" placeholder="Ingresa tu mensaje"></textarea>
+                </div>
+  
+                <button type="submit" class="btn btn-primary btn-block">Enviar</button>
+                <br>
+                <p>Para cualquier otra consulta, puedes contactarnos a través de nuestro <a href="mailto:agalan3@alu.ucam.edu">email</a></p>
+
+                <a href="/login" class="btn btn-secondary btn-block">Volver</a>
+              </form>
+
+            </div>
+          </div>
+  
+        </div>
+      </div>
+    </div>
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+  </body>
+</html>

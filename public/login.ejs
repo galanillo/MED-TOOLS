@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+      <strong>Esta página web esta actualmente en desarrollo.</strong> versión: 0.0.1 con responsable: Alejandro Galán, agalan3@alu.ucam.edu.
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+
+    <title>MED-TOOLS - Iniciar sesión</title>
+
+
+
+    
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+  </head>
+  <body>
+
+    <div class="container mt-5">
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+  
+          <div class="card">
+            <div class="card-header">
+              <h4 class="text-center">Bienvenido a MED-TOOLS</h4>
+            </div>
+  
+            <div class="card-body">
+
+              <form method="post" action="/login">
+  
+                <div class="form-group">
+                  <label for="id">ID de usuario</label>
+                  <input type="text" class="form-control" id="id" name="id" placeholder="Ingresa tu ID de usuario" required="true">
+                </div>
+  
+                <div class="form-group">
+                  <label for="password">Contraseña</label>
+                  <input type="password" class="form-control" id="password" name="password" placeholder="Ingresa tu contraseña" required="true">
+                </div>
+  
+                <div class="form-group">
+                  <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="remember">
+                    <label class="custom-control-label" for="remember">Recordar contraseña</label>
+                  </div>
+                </div>
+  
+                <button type="submit" class="btn btn-primary btn-block">Iniciar sesión</button> <!--href="/loggedin/inicio"-->
+                <a href="/ayuda" class="btn btn-primary btn-block">Ayuda</a>
+                <a href="/citaonline" class="btn btn-secondary btn-block">Acceso Pacientes...</a>
+                
+                <br>
+                <a href="/loggedin/inicio" class="btn btn-primary btn-block">Admin</a>
+
+              </form>
+
+            </div>
+          </div>
+  
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+  </body>
+</html>

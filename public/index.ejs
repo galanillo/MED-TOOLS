@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <div class="alert alert-success alert-dismissible fade show" role="alert">
+    <strong>Ha iniciado sesión correctamente</strong>, está usted en el menú principal de funciones de la API
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <title>MED-TOOLS - Inicio</title>
+  
+
+  
+  <!-- Font Awesome CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+
+    <img src="/img/" width="30" height="30" class="d-inline-block align-top" alt="">
+    
+    <a class="navbar-brand" href="loggedin/inicio">MED-TOOLS</a>
+    
+      <ul class="navbar-nav ml-auto">
+        <li class="navbar-brand">
+        <a href="/login" class="btn btn-danger"><i class="fas fa-sign-out-alt"></i>Cerrar sesión</a>
+        </li>
+      </ul>
+
+  </nav>
+
+  <div class="container mt-5">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+
+        <div class="card">
+          <div class="card-header">
+            <h4 class="text-center">Nombre de la clínica</h4>
+          </div>
+
+            <div class="card-body">
+
+                <p>Funciones</p>
+                <a href="/loggedin/pacientes" class="btn btn-primary btn-block">Pacientes</a>
+                <a href="/loggedin/materialmedico" class="btn btn-primary btn-block">Material médico</a>
+                <a href="/loggedin/recetas" class="btn btn-primary btn-block">Recetas</a>
+                <br>
+                <br>
+                <p>Cita con pacientes por videoconferencia</p>
+                <form id="form_reunion">
+                  <input type="text" id="codigo_reunion" name="codigo_reunion" placeholder="Código de reunión">
+                  <button id="boton_reunion" class="btn btn-primary" type="button" disabled>Ir a la reunión</button>
+                </form>
+
+                <br>
+                <p>Administracion de empresa</p>
+                <a href="/login" class="btn btn-secondary btn-block">Gestión de empleados</a>
+                <a href="/login" class="btn btn-secondary btn-block">Gestión de formularios de contacto</a>
+                <a href="/login" class="btn btn-secondary btn-block">Calendario</a>
+            
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <script> //CITA ONLINE
+      const codigoReunion = document.getElementById("codigo_reunion");
+      const botonReunion = document.getElementById("boton_reunion");
+    
+      codigoReunion.addEventListener("input", function() {
+        if (codigoReunion.value.trim() === "") {
+          botonReunion.disabled = true;
+        } else {
+          botonReunion.disabled = false;
+        }
+      });
+    
+      botonReunion.addEventListener("click", function() {
+        const urlReunion = "https://meet.google.com/" + codigoReunion.value;
+        window.location.href = urlReunion;
+      });
+    </script>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+
+
+</body>
+
+
+
+</html>

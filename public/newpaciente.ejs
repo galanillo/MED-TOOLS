@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>MED-TOOLS - Pacientes</title>
+
+        <!-- Font Awesome CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+      </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="/loggedin/inicio">MedTools</a>
+    </nav>
+
+    <!-- Card para crear un nuevo paciente -->
+    <div class="card m-3">
+      <div class="card-header">
+        <h3>Crear nuevo paciente</h3>
+      </div>
+      <div class="card-body">
+        <form>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="nombre">Nombre</label>
+              <input
+                type="text"
+                class="form-control"
+                id="nombre"
+                placeholder="Introduce el nombre del paciente"
+              />
+            </div>
+            <div class="form-group col-md-6">
+              <label for="apellidos">Apellidos</label>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="apellido1"
+                    placeholder="Primer apellido"
+                  />
+                </div>
+                <div class="form-group col-md-6">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="apellido2"
+                    placeholder="Segundo apellido"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="fecha_nacimiento">Fecha de Nacimiento</label>
+              <input
+                type="date"
+                class="form-control"
+                id="fecha_nacimiento"
+              />
+            </div>
+            <div class="form-group col-md-6">
+              <label for="genero">Género</label>
+              <select class="form-control" id="genero">
+                <option selected>Selecciona un género</option>
+                <option>Masculino</option>
+                <option>Femenino</option>
+                <option>Otro</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="direccion">Dirección</label>
+            <input
+              type="text"
+              class="form-control"
+              id="direccion"
+              placeholder="Introduce la dirección del paciente"
+            />
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="telefono">Teléfono</label>
+              <input
+                type="tel"
+                class="form-control"
+                id="telefono"
+                placeholder="Introduce el teléfono del paciente"
+              />
+            </div>
+            <div class="form-group col-md-6">
+              <label for="email">Correo electrónico</label>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                placeholder="Introduce el correo electrónico del paciente"
+              />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <button type="submit" class="btn btn-primary mr-2">
+                Crear
+              </button>
+              <a href="/loggedin/pacientes" class="btn btn-secondary">
+                Cancelar
+              </a>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- jQuery, Popper.js, Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/esm/popper"
+      integrity="sha384-8yBxMpamphC+XLdEuLjzov0sazvJZtjlA2fIyO4O4JxcpvbD/c57CTbi+OZfJGKG"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"
+      integrity="sha512-FA7Oyo12cvKQV7plhh+/qUHtb6SlvX9WsqjKpxHZ3qGAbKjtfESf6lOGJyrm+oHyRkpyvo1ivXZzJgZ27jFfxQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </body>
+      <!-- Bootstrap JS -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+</html>
+             
